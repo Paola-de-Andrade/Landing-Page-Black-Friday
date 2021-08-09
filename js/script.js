@@ -2,7 +2,7 @@ const form=document.getElementById('form')
 
 form.addEventListener('submit', (e)  => {
     e.preventDefault();
-    //alert("Cadastrado com sucesso!")
+    alert("Cadastrado com sucesso!")
     let nome = document.getElementById("nome").value;
     let email = document.getElementById("email").value;
     console.log("nome = " + nome)
@@ -15,16 +15,16 @@ form.addEventListener('submit', (e)  => {
 
     localStorage.setItem('lead', convertData)
 
-    let content = document.getElementById('content')
+    //let content = document.getElementById('content')
 
-    let carregando = `<p>Carregando...<\p>`
+    //let carregando = `<p>Carregando...<\p>`
 
-    let pronto = `<p>Pronto, você foi cadastrado!<\p>`
+    //let pronto = `<p>Pronto, você foi cadastrado!<\p>`
 
-    content.innerHTML = carregando
+    //content.innerHTML = carregando
 
-    setTimeout(() => {
-        content.innerHTML = pronto
-},1000)
+    //setTimeout(() => {
+        //content.innerHTML = pronto
+//},1000)
 
 })
